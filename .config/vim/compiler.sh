@@ -1,4 +1,5 @@
 #!/bin/sh
+# call in vim : !path/to/compiler.sh %
 file=$(readlink -f "$1")
 base="${file%.*}"
 
