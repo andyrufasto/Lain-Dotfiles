@@ -16,3 +16,4 @@ set spelllang=en,es
 set splitbelow splitright
 set vb
 syntax on
+
