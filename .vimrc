@@ -1,0 +1,9 @@
+source ~/.config/vim/basic.vimrc
+source ~/.config/vim/compiler.vimrc
+source ~/.config/vim/html.vimrc
+source ~/.config/vim/mapping.vimrc
+source ~/.config/vim/markdown.vimrc
+source ~/.config/vim/plugins.vimrc
+source ~/.config/vim/sh.vimrc
+source ~/.config/vim/tex.vimrc
+source ~/.config/vim/r.vimrc
