@@ -1,0 +1,44 @@
+background_opacity: 0.6
+key_bindings:
+  - { key: Key0,     mods: Control,       action: ResetFontSize    }
+  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
+  - { key: Add,      mods: Control,       action: IncreaseFontSize }
+  - { key: Subtract, mods: Control,       action: DecreaseFontSize }
+  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+
+
+env:
+  # TERM env customization. Default is xterm-256color
+  # Note: the default TERM value `xterm-256color` does not
+  # specify all features alacritty supports. This does pose
+  # a few issues with programs relying on terminfo and the
+  # `tput` command
+  TERM: xterm-256color
+# BEGIN ACE
+colors:
+  primary:
+    background: '0x0E121A'
+    foreground: '0xa5bada'
+  cursor:
+    text:       '0x0E121A'
+    cursor:     '0xa5bada'
+  normal:
+    black:      '0x0E121A'
+    red:        '0x2A3D8D'
+    green:      '0x314C8F'
+    yellow:     '0x395DA9'
+    blue:       '0x4B63AB'
+    magenta:    '0x5871CA'
+    cyan:       '0x857BC7'
+    white:      '0xa5bada'
+  bright:
+    black:      '0x738298'
+    red:        '0x2A3D8D'
+    green:      '0x314C8F'
+    yellow:     '0x395DA9'
+    blue:       '0x4B63AB'
+    magenta:    '0x5871CA'
+    cyan:       '0x857BC7'
+    white:      '0xa5bada'
+
+# END ACE
