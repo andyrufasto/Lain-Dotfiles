@@ -1,0 +1,19 @@
+# The Simple X Hotkey Daemon is the program used by LARBS to map most of the
+# dwm-independent commands.  This file is pretty readable, so I'll let you read
+# it.
+
+# The keys NOT bound here by sxhkd, but by dwm or i3 are:
+# The t thru p keys on the top row
+# The f thru ; keys on the home row
+# The b key on the bottom row (hides the bar in either case)
+
+# Basic binds
+super + Return
+	$TERMINAL
+super + w
+        qutebrowser
+super + r 
+        $TERMINAL -e ranger
+super + e
+        nautilus
+
