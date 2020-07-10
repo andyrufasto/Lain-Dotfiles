@@ -1,0 +1,13 @@
+# Interval in seconds to change background
+SLEEPTIME=20
+# Start a Loop
+while :
+do
+# Command to Select a random jpg file from directory
+# Delete the *.jpg to select any file but it may return a folder
+PIC=$(find ~/Pictures/wallpaper/*.jpg | shuf -n1)
+~/scripts/pywal $PIC
+# Sleep before continuing with loop
+sleep $SLEEPTIME
+continue
+done
