@@ -1,0 +1,16 @@
+wal -i $1
+#alacritty
+~/scripts/alacritty_colors
+#dunst
+~/scripts/dunstwall
+#vis
+killall -USR1 vis
+#notify-send
+nombre=$(echo $1 | cut -d_ -f2)
+
+if [ $2 == "-r" ]
+then
+	notify-send -i ~/Pictures/wallpaper/$1 "Wallpaper" $nombre
+else
+	notify-send -i $1 "Wallpaper" $nombre
+fi
