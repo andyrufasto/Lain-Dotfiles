@@ -1,0 +1,19 @@
+{
+	"coc.preferences.formatOnSaveFiletypes": [
+		"css",
+		"markdown",
+		"javascript",
+		"graphql",
+		"html",
+		"yaml",
+		"json",
+		"python",
+		"r"
+	],
+	// python config
+	"python.linting.enabled": true,
+	"python.linting.pylintEnabled": true,
+	// r config
+	"r.lsp.path": "/usr/local/bin/R",
+	"snippets.userSnippetsDirectory": "~/.config/vim/snips",
+}
