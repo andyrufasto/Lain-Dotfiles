@@ -3,14 +3,14 @@ filetype plugin indent on
 
 call vundle#begin('~/.vim/plugged')
 
-Plugin 'dylanaraps/wal.vim'
-Plugin 'iberianpig/ranger-explorer.vim' 
-Plugin 'vim-airline/vim-airline'
-Plugin 'vimwiki/vimwiki'
-Plugin 'baskerville/vim-sxhkdrc'
+Plug 'dylanaraps/wal.vim'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'liuchengxu/vim-which-key'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'vim-airline/vim-airline' 
+Plug 'voldikss/vim-floaterm'
+Plug 'KKPMW/vim-sendtowindow'
 
 call vundle#end()
 
 colorscheme wal
-let g:vimwiki_list = [{'path': '~/vimwiki/',
-                      \ 'syntax': 'markdown', 'ext': '.md'}]
