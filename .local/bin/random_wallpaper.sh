@@ -1,2 +1,4 @@
+#!/bin/sh
+
 PIC=$(find ~/Pictures/wallpaper/*.jpg | shuf -n1)
-~/scripts/pywal $PIC
+~/scripts/pywal.sh "$PIC"
