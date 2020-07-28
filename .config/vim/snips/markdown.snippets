@@ -1,0 +1,28 @@
+snippet gist "Inserta un codigo de gist" br
+{% gist $1 %}
+endsnippet
+
+snippet ig "Inserta imagen" br
+![$1](/assets/imagen/post/$2)
+endsnippet
+
+snippet il "Link" br
+[$1]($2)
+endsnippet
+
+snippet bf "Negrita" 
+**$1**
+endsnippet
+
+snippet meta "Meta" b
+---
+layout: post
+title: $1
+date: "`!v strftime("%Y-%m-%d")`"
+description: $2
+categories: $3
+- $4
+tags:
+- $5
+---
+endsnippet

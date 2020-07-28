@@ -1,0 +1,40 @@
+snippet #sh "Shebang" b
+#!/bin/sh
+endsnippet
+
+snippet ext "Separa archivo de extension" b
+file=$(readlink -f "\$1")
+base="${file%.*}"
+endsnippet
+
+snippet fun "funtion" b
+function ${1:function_name}() {
+		${0:#function_body}
+}
+endsnippet
+
+snippet if "if" b
+if [ ${1:condition} ];then
+	${2:body}
+fi
+endsnippet
+
+snippet ife "if is equal" b
+${1:variable}=${2:command}
+if [ "$${1:variable}" == "$${3:validation}" ]; then
+	${4:do}
+else
+	${5:do}
+fi
+endsnippet
+
+snippet case "case in" b
+case "$variable" in
+	${1:opt1})
+		${2:do1}
+		;;
+	${3:op2})
+		${4:do2}
+		;;
+esac
+endsnippet

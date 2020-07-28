@@ -1,0 +1,81 @@
+snippet bf  "Negrita"
+\textbf{$1}
+endsnippet
+
+snippet enum "Enumerate"
+\begin{enumerate}
+	\item $1
+	\item $2
+\end{enumerate}
+endsnippet
+
+snippet eq "Ecuación"
+\begin{equation}
+	$1
+\end{equation}
+endsnippet
+
+snippet beg "begin end"
+\begin{$1}
+	$2
+\end{$1}
+endsnippet
+
+snippet math "Math"
+\[
+${1:math}
+\]
+endsnippet
+
+snippet up "Usepackage"
+\usepackage{${1:package}} $0
+endsnippet
+
+snippet ig "Include graphicx"
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=${2:0.5}]{${1:imagen.jpg}}
+	\caption{${3:caption}}
+	\label{${4:label}}
+\end{figure}
+endsnippet
+
+snippet usemath "paquetes para math" b
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+endsnippet
+
+snippet [] "left and rigtht []" b
+\left[ $1 \rigt]
+endsnippet
+
+snippet minipage "2 columnas" b
+\begin{minipage}[b]{\textwidth}
+\begin{minipage}[b]{0.5 \textwidth}
+	$1
+\end{minipage} \hfill
+\begin{minipage}[b]{0.5 \textwidth}
+	$2
+\end{minipage}
+\end{minipage}
+endsnippet
+
+snippet multiline "math multiline" b
+\begin{multiline*}
+	$1
+\end{multiline*}
+endsnippet
+
+snippet table "Table" b
+\begin{table}[h]
+\center
+	\begin{tabular}{ll}
+		\hline
+		${1:a1} & ${2:a2} \\\
+		${3:b1} & ${4:b2} \\\
+		\hline
+	\end{tabular}
+\end{table}
+
+endsnippet
