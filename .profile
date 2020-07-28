@@ -25,12 +25,14 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-wal -i ~/.config/i3/wallpaper.jpg
-export TERMINAL="alacritty"
-export FILE="ranger"
-export BROWSER="qutebrowser"
-export EDITOR="vim"
-export DMENU_OPTIONS="-b"
+
+
 TZ='America/Lima'; export TZ
+export BROWSER="brave-browser"
+export DMENU_OPTIONS="-b"
+export EDITOR="vim"
+export FILE="ranger"
+export TERMINAL="alacritty"
+
 startx i3
 
