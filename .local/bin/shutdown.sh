@@ -9,6 +9,6 @@ dmenu_color(){
 
 election=$(echo "No\nYes" | dmenu_color )
 
-if [ $election = "Yes" ]
+if [ "$election" = "Yes" ]
 	then systemctl poweroff
 fi
