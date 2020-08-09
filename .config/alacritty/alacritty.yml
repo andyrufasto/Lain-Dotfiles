@@ -14,31 +14,47 @@ env:
   # a few issues with programs relying on terminfo and the
   # `tput` command
   TERM: xterm-256color
+    
+font:
+  normal:
+    family: mononoki Nerd Font
+  bold:
+    family: mononoki Nerd Font
+    style: Bold
+
+  italic:
+    family: mononoki Nerd Font
+    style: Italic
+
+  bold_italic:
+    family: mononoki Nerd Font
+    style: Bold Italic
+  size: 15
+
 # BEGIN ACE
 colors:
   primary:
-    background: '0x0E121A'
-    foreground: '0xa5bada'
+    background: '0x171111'
+    foreground: '0xdd959a'
   cursor:
-    text:       '0x0E121A'
-    cursor:     '0xa5bada'
+    text:       '0x171111'
+    cursor:     '0xdd959a'
   normal:
-    black:      '0x0E121A'
-    red:        '0x2A3D8D'
-    green:      '0x314C8F'
-    yellow:     '0x395DA9'
-    blue:       '0x4B63AB'
-    magenta:    '0x5871CA'
-    cyan:       '0x857BC7'
-    white:      '0xa5bada'
+    black:      '0x171111'
+    red:        '0x623A43'
+    green:      '0x594A4D'
+    yellow:     '0x8E2837'
+    blue:       '0xAB2738'
+    magenta:    '0xD82C39'
+    cyan:       '0x9C3345'
+    white:      '0xdd959a'
   bright:
-    black:      '0x738298'
-    red:        '0x2A3D8D'
-    green:      '0x314C8F'
-    yellow:     '0x395DA9'
-    blue:       '0x4B63AB'
-    magenta:    '0x5871CA'
-    cyan:       '0x857BC7'
-    white:      '0xa5bada'
-
+    black:      '0x9a686b'
+    red:        '0x623A43'
+    green:      '0x594A4D'
+    yellow:     '0x8E2837'
+    blue:       '0xAB2738'
+    magenta:    '0xD82C39'
+    cyan:       '0x9C3345'
+    white:      '0xdd959a'
 # END ACE
