@@ -3,7 +3,9 @@
 # Menu inicial
 cfg=$(
 cat << EOF | fzf
+alacritty
 bash
+bspwm
 i3
 newsboat
 polybar
@@ -41,7 +43,6 @@ case "$bash_op" in
 esac
 }
 
-
 vimf(){
 vim_op=$(
 cat << EOF | fzf
@@ -75,9 +76,14 @@ esac
 }
 
 # Final case
+
 case "$cfg" in
 				"bash")
 							bashf ;;
+				"alacritty")
+							vim ~/.config/alacritty/alacritty.yml ;;
+				"bspwm")
+							vim ~/.config/bspwm/bspwmrc ;;
 				"i3")
 							vim ~/.config/i3/config ;;
 				"newsboat")
@@ -90,7 +96,8 @@ case "$cfg" in
 							vim ~/.config/qutebrowser/config.py ;;
 				"ranger")
 							vim ~/.config/ranger/rc.conf ;;
+				"sxhkd")
+							vim ~/.config/sxhkd/sxhkdrc ;;
 				"vim")
 							vimf ;;
 esac
-
