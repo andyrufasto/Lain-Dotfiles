@@ -1,9 +1,7 @@
 # dotfiles-debian
 
 Comfy debian configs
+![dotfiles](/img/dotfiles.gif)
 
-- i3-gaps
-- polybar
-- vim
-- pywal integration with everything
+# Alacritty
 
