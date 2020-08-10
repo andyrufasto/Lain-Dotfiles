@@ -1,3 +1,4 @@
+
 snippet #sh "Shebang" b
 #!/bin/sh
 endsnippet
@@ -37,4 +38,9 @@ case "$variable" in
 		${4:do2}
 		;;
 esac
+endsnippet
+
+snippet IFS "Internal Field Separator" b
+IFS=${1:,}
+set -- \`${2:command}\`
 endsnippet
