@@ -1,9 +1,10 @@
+
 snippet gist "Inserta un codigo de gist" br
 {% gist $1 %}
 endsnippet
 
 snippet ig "Inserta imagen" br
-![$1](/assets/imagen/post/$2)
+![$1](/assets/images/post/$2)
 endsnippet
 
 snippet il "Link" br
@@ -25,4 +26,11 @@ categories: $3
 tags:
 - $5
 ---
+endsnippet
+
+snippet code "blockcode" b
+\`\`\`$1
+$2
+\`\`\`
+
 endsnippet
