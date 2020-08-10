@@ -1,4 +1,4 @@
-j[colors]
+[colors]
 alert = ${xrdb:color3:#222}
 background = #80323232
 background-alt = #80323232
