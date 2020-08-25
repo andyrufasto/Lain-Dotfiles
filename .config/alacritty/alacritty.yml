@@ -29,32 +29,37 @@ font:
   bold_italic:
     family: mononoki Nerd Font
     style: Bold Italic
-  size: 15
+  size: 10
 
 # BEGIN ACE
 colors:
   primary:
-    background: '0x171111'
-    foreground: '0xdd959a'
+    background: '0x080A08'
+    foreground: '0x79cd7b'
   cursor:
-    text:       '0x171111'
-    cursor:     '0xdd959a'
+    text:       '0x080A08'
+    cursor:     '0x79cd7b'
   normal:
-    black:      '0x171111'
-    red:        '0x623A43'
-    green:      '0x594A4D'
-    yellow:     '0x8E2837'
-    blue:       '0xAB2738'
-    magenta:    '0xD82C39'
-    cyan:       '0x9C3345'
-    white:      '0xdd959a'
+    black:      '0x080A08'
+    red:        '0x0B4D0C'
+    green:      '0x096D09'
+    yellow:     '0x244824'
+    blue:       '0x205120'
+    magenta:    '0x433A43'
+    cyan:       '0x058F07'
+    white:      '0x79cd7b'
   bright:
-    black:      '0x9a686b'
-    red:        '0x623A43'
-    green:      '0x594A4D'
-    yellow:     '0x8E2837'
-    blue:       '0xAB2738'
-    magenta:    '0xD82C39'
-    cyan:       '0x9C3345'
-    white:      '0xdd959a'
+    black:      '0x548f56'
+    red:        '0x0B4D0C'
+    green:      '0x096D09'
+    yellow:     '0x244824'
+    blue:       '0x205120'
+    magenta:    '0x433A43'
+    cyan:       '0x058F07'
+    white:      '0x79cd7b'
+
 # END ACE
+window:
+  padding:
+    x: 10
+    y: 10
