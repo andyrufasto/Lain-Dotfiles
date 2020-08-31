@@ -1,7 +1,7 @@
 #Stolen configs
 song_status_format = "{%a - %t}"
 song_list_format = "$6{%a »$4 %t $/r$/u$R$b$1%l$/b  }|{%f$/r}"
-song_window_title_format = "{%a - }{%t}|{%f}"
+song_window_title_format = "  {%a - }{%t}|{%f}"
 
 ncmpcpp_directory = "~/.config/ncmpcpp/"
 external_editor = "vim"
@@ -12,9 +12,10 @@ message_delay_time = "1"
 playlist_disable_highlight_delay = 1
 
 now_playing_prefix = "$b$6 »» "
-now_playing_suffix =  "$/b"
-current_item_prefix = $(16)$r
+now_playing_suffix =  "$8$/b"
+current_item_prefix = $(white)$r
 current_item_suffix = $/r$(end)
+current_item_inactive_column_prefix = $(white)$r
 
 browser_playlist_prefix = "$77»$77 "
 
@@ -24,7 +25,7 @@ use_console_editor = "yes"
 discard_colors_if_item_is_selected = "yes"
 
 header_visibility = "no"
-titles_visibility = "no"
+titles_visibility = "yes"
 statusbar_visibility = "yes"
 display_remaining_time = "no"
 
@@ -77,31 +78,3 @@ locked_screen_width_part = 30
 
 #execute_on_song_change = zsh ~/.config/ncmpcpp/art.sh
 execute_on_song_change= zsh ~/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp_cover_art.sh
-
-#### Mappings
-def_key "h"
-    previous_column
-def_key "j"
-    scroll_down
-def_key "k"
-    scroll_up
-def_key "l"
-    next_column
-def_key "ctrl-u"
-    page_up
-def_key "ctrl-d"
-    page_down
-def_key "."
-    show_lyrics
-def_key "n"
-    next_found_item
-def_key "N"
-    previous_found_item
-def_key "J"
-    move_sort_order_down
-def_key "K"
-    move_sort_order_up
-def_key "d"
-    delete_playlist_items
-def_key "d"
-    delete_browser_items
