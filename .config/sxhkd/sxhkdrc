@@ -36,6 +36,9 @@ super + x
 super + v
     pavucontrol
 
+# explorer
+super + e
+	thunar
 
 #alacritty
 super + Return
@@ -57,9 +60,6 @@ super + {t,shift + t,s,f}
 # SUPER + SHIFT KEYS
 #################################################################
 
-#File-Manager
-super + shift + Return
-	thunar
 
 #Keyboard dependent
 #File-Manager
