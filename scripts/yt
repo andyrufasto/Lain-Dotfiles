@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# youtube options
+opt=$(
+cat << EOF | fzf
+  mp3
+  playlist
+  mpv
+逸 podcast
+EOF
+)
+
+# read url
+echo -n "URL: "
+read URL
+
+# case 
+case "$opt" in
+				"  mp3")
+							youtube-dl --ignore-errors -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 "$URL" ;;
+				"  playlist")
+							youtube-dl --ignore-errors -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 --yes-playlist "$URL" ;;
+				"  mpv")
+							devour.sh mpv "$URL" ;;
+				"逸 podcast")
+							devour.sh mpv --ytdl-format=18 "$URL" ;;
+esac
