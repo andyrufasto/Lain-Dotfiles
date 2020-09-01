@@ -1,0 +1,9 @@
+#!/bin/sh
+while :
+do
+	for PIC in ~/Pictures/dyamic/Lakeside/*.png
+	do
+		pywal $PIC
+		sleep 20
+	done
+done
