@@ -700,7 +700,7 @@ format-background = ${colors.background}
 [module/mpd]
 ;https://github.com/jaagr/polybar/wiki/Module:-mpd
 type = internal/mpd
-format-online =  " <label-song>   <icon-prev> <toggle>  <icon-next>"
+format-online =  " <label-song>   <icon-prev> <toggle> <icon-next>"
 ;format-online =  "<label-song>  <bar-progress>"
 ;format-online =  "<label-song>  <bar-progress> <icon-prev>  <icon-stop>  <toggle>  <icon-next>"
 icon-prev = 玲
