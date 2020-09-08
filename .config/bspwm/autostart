@@ -14,8 +14,8 @@ $HOME/.config/polybar/launch.sh &
 
 #change your keyboard if you need it
 #setxkbmap -layout be
-wal -i  ~/Pictures/wallpaper/razer.jpg &
-~/scripts/alacritty_colors
+wal -i  ~/Pictures/wallpaper/1bBLGQ.jpg &
+~/scripts/alacritty_colors &
 mpd &
 
 #Some ways to set your wallpaper besides variety or nitrogen
@@ -23,14 +23,14 @@ mpd &
 
 dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 xsetroot -cursor_name left_ptr &
-run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
+run sxhkd -c ~/.config/sxhkd/sxhkdrc &
 
 run nm-applet &
 run pamac-tray &
 run xfce4-power-manager &
 numlockx on &
 blueberry-tray &
-picom --config $HOME/.config/bspwm/picom.conf &
+picom --config $HOME/.config/picom/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
