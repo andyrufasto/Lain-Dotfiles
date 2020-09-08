@@ -1,4 +1,10 @@
-background_opacity: 0.6
+#===================================================================
+# vim: ft=cfg
+# ~/.config/alacritty/alacritty.yml
+# Configuración de Alacritty
+#===================================================================
+
+background_opacity: 0.7
 key_bindings:
   - { key: Key0,     mods: Control,       action: ResetFontSize    }
   - { key: Equals,   mods: Control,       action: IncreaseFontSize }
@@ -34,32 +40,33 @@ font:
 # BEGIN ACE
 colors:
   primary:
-    background: '0x080A08'
-    foreground: '0x79cd7b'
+    background: '0x070807'
+    foreground: '0xcdcccc'
   cursor:
-    text:       '0x080A08'
-    cursor:     '0x79cd7b'
+    text:       '0x070807'
+    cursor:     '0xcdcccc'
   normal:
-    black:      '0x080A08'
-    red:        '0x0B4D0C'
-    green:      '0x096D09'
-    yellow:     '0x244824'
-    blue:       '0x205120'
-    magenta:    '0x433A43'
-    cyan:       '0x058F07'
-    white:      '0x79cd7b'
+    black:      '0x070807'
+    red:        '0x84787C'
+    green:      '0x129E14'
+    yellow:     '0x3BDA26'
+    blue:       '0x93F263'
+    magenta:    '0x8F8F8F'
+    cyan:       '0xA1AC95'
+    white:      '0xcdcccc'
   bright:
-    black:      '0x548f56'
-    red:        '0x0B4D0C'
-    green:      '0x096D09'
-    yellow:     '0x244824'
-    blue:       '0x205120'
-    magenta:    '0x433A43'
-    cyan:       '0x058F07'
-    white:      '0x79cd7b'
+    black:      '0x8f8e8e'
+    red:        '0x84787C'
+    green:      '0x129E14'
+    yellow:     '0x3BDA26'
+    blue:       '0x93F263'
+    magenta:    '0x8F8F8F'
+    cyan:       '0xA1AC95'
+    white:      '0xcdcccc'
 
 # END ACE
 window:
   padding:
     x: 10
     y: 10
+
