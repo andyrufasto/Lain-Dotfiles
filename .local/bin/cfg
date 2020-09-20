@@ -8,6 +8,7 @@ bash
 bspwm
 i3
 newsboat
+picom
 polybar
 profile
 qutebrowser
@@ -43,59 +44,116 @@ case "$bash_op" in
 esac
 }
 
+rangerf(){
+ranger_op=$(
+cat << EOF | fzf
+rc
+rifle
+EOF
+)
+
+case "$ranger_op" in
+				"rc")
+								vim ~/.config/ranger/rc.conf;;
+				"rifle")
+								vim ~/.config/ranger/rifle.conf;;
+esac
+}
+
+newsboatf(){
+newsboat_op=$(
+cat << EOF | fzf
+urls
+config
+EOF
+)
+
+case "$newsboat_op" in
+				"urls")
+								vim ~/.config/newsboat/urls;;
+				"config")
+								vim ~/.config/newsboat/config;;
+esac
+}
+
 vimf(){
 vim_op=$(
 cat << EOF | fzf
 basic
-c
+coc
 mapping
-markdown
 plugins
-prompt
-tex
-vimrc
+snips
 EOF
 )
 
 case "$vim_op" in
 				"basic")
 						vim ~/.config/vim/basic.vimrc ;;
-				"c")
-						vim ~/.config/vim/c.vimrc;;
+				"coc")
+						vim ~/.config/vim/coc.vimrc;;
 				"mapping")
 						vim ~/.config/vim/mapping.vimrc ;;
 				"markdown")
 						vim ~/.config/vim/md.vimrc  ;;
 				"plugins")
 						vim ~/.config/vim/plugins.vimrc ;;
-				"tex")
-						vim ~/.config/vim/tex.vimrc ;;
+				"snips")
+						snipsf ;;
 				"vimrc")
 						vim ~/.vimrc ;;
 esac
 }
 
+snipsf(){
+snips_op=$(
+cat << EOF | fzf
+julia
+markdown
+plaintex
+sh
+tex
+EOF
+)
+
+case "$snips_op" in
+				"julia")
+						vim ~/.config/vim/snips/julia.snippets ;;
+				"markdown")
+						vim ~/.config/vim/snips/markdown.snippets;;
+				"plaintex")
+						vim ~/.config/vim/snips/plaintex.snippets ;;
+				"sh")
+						vim ~/.config/vim/snips/sh.snippets  ;;
+				"tex")
+						vim ~/.config/vim/snips/tex.snippets ;;
+esac
+}
+
+
 # Final case
 
 case "$cfg" in
+				"alacritty")
+								vim ~/.config/alacritty/alacritty.yml ;;
 				"bash")
 							bashf ;;
-				"alacritty")
-							vim ~/.config/alacritty/alacritty.yml ;;
-				"bspwm")
-							vim ~/.config/bspwm/bspwmrc ;;
 				"i3")
 							vim ~/.config/i3/config ;;
+				"bspwm")
+							vim ~/.config/bspwm/bspwmrc;;
 				"newsboat")
-							vim ~/.config/newsboat/urls ;;
+							newsboatf ;;
 				"polybar")
 							vim ~/.config/polybar/config ;;
 				"profile")
 							vim ~/.profile ;;
+				"picom")
+							vim ~/.config/picom/picom.conf ;;
 			"qutebrowser")
 							vim ~/.config/qutebrowser/config.py ;;
 				"ranger")
-							vim ~/.config/ranger/rc.conf ;;
+							rangerf ;;
 				"sxhkd")
 							vim ~/.config/sxhkd/sxhkdrc ;;
 				"vim")
