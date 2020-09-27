@@ -14,9 +14,9 @@ $HOME/.config/polybar/launch.sh &
 
 #change your keyboard if you need it
 #setxkbmap -layout be
-wal -i  ~/Pictures/wallpaper/1bBLGQ.jpg &
-~/scripts/alacritty_colors &
+
 mpd &
+~/.local/bin/pywal ~/Pictures/wallpaper/cat_green.jpeg &
 
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-scale ~/.config/bspwm/wall.png &
@@ -32,6 +32,7 @@ numlockx on &
 blueberry-tray &
 picom --config $HOME/.config/picom/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-/usr/lib/xfce4/notifyd/xfce4-notifyd &
+#/usr/lib/xfce4/notifyd/xfce4-notifyd &
+dunst &
 run volumeicon &
 
