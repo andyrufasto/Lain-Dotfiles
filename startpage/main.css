@@ -1,0 +1,90 @@
+@import url("file:///home/lain/.cache/wal/colors.css");
+
+body, html {
+    height: 100%;
+    background-image: var(--wallpaper);
+    background-image: linear-gradient(hsla(200,0%,0%,.5) 100%,transparent 100%), var(--wallpaper);
+    background-size: cover;
+    background-color: var(--background);
+    background-position: center;
+    display: grid;
+    overflow: hidden;
+    margin: 0px;
+}
+
+* {
+    font-family: 'Roboto', 'KFhimaji';
+}
+
+.wrapper {
+  margin: 50px;
+}
+
+.center {
+    margin: auto;
+}
+
+.box {
+    background: transparent;
+    color: var(--color7);
+    padding: 35px;
+    border-style: solid;
+    border-width: 8px 8px 50px 8px;
+    border-color: var(--color7);
+    float: left;
+    margin: 15px;
+    min-width: 8em;
+    min-height: 8em;
+    box-shadow: 15px 15px var(--color9);
+    position: relative;
+}
+
+font.blink {
+  animation: blinker 3s linear infinite;
+  color: var(--color7);
+}
+@keyframes blinker {
+  50% {
+    opacity: 0.3;
+  }
+}
+.title {
+    font-size: 20px;
+    color: var(--color3);
+    position: absolute;
+    top: 102%;
+    left: 0px;
+}
+
+.box ul {
+    margin: 0px;
+    padding: 5px;
+    list-style-type: disc;
+}
+
+li {
+    padding-left:1em;
+    color: var(--color7);
+}
+li span {
+    display:block;
+    margin-left:-0.5em;
+    color: var(--background);
+    line-height: 1.3em;
+}
+
+a {
+    color: var(--color7);
+    text-decoration: none;
+    font-size: 1.15em;
+}
+
+a:hover {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color7);
+    font-size: 1.15em;
+    background-color: var(--color3);
+
+}
+
