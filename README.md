@@ -7,19 +7,17 @@ Comfy linux configs: aesthetic, minimalist and
 ## Pywal on everything !!!
 - alacritty (terminal)
 - bspwm (window manager)
-- discord
 - dmenu (launcher)
 - dunst
 - i3 (window manager)
 - polybar
 - qutebrowser (browser), for firefox see pywalfox
 - rofi (launcher)
-- spicetify (spotify)
 - screenkey
 - vim theme
 - vis (cli music visualizer)
 - zathura (pdf reader)
-see oomox to create a pywal gtk theme
+see [oomox](https://github.com/themix-project/oomox)  to create a gtk theme
 
 ## Terminal:
 ### [Alacritty](https://github.com/alacritty/alacritty)
