@@ -1,0 +1,9 @@
+. "${HOME}/.cache/wal/colors.sh"
+
+pkill screenkey
+
+screenkey -s small \
+	-f "Mononoki nerd Font 9" \
+	--font-color "$color15" \
+	--bg-color "$color0"
+
