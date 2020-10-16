@@ -1,0 +1,10 @@
+appearance.calendarview=monthly
+appearance.dayseparator=yes
+appearance.defaultpanel=calendar
+appearance.emptyday=--
+appearance.emptyline=yes
+appearance.headerline=yes
+format.inputdate=4
+general.autosave=yes
+general.firstdayofweek=monday
+general.multipledays=yes
