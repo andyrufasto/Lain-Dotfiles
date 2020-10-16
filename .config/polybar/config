@@ -16,8 +16,8 @@ compositing-underline = over
 compositing-border = over
 
 ; Define fallback values used by all module formats
-format-foreground = ${xrdb:color7:#222}
-format-background = #80323232
+format-foreground = ${xrdb:color15}
+format-background = ${xrdb:color0}
 format-underline =
 format-overline =
 format-spacing =
@@ -26,8 +26,8 @@ format-margin =
 format-offset =
 
 [colors]
-background = #80323232
-foreground = ${xrdb:color7:#222}
+background = ${xrdb:color0}
+foreground = ${xrdb:color15:#222}
 alert = ${xrdb:color7:#222}
 volume-min = #a3be8c
 volume-med = #ebcb8b
@@ -1140,3 +1140,5 @@ content = 
 [module/right-end-bottom]
 inherit = module/glyph
 content = 
+
+
