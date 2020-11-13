@@ -1,4 +1,4 @@
-neofecth
+neofetch
 
 abbr r "ranger"
 abbr glo "git log --oneline -10"
