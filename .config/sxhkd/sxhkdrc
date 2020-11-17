@@ -8,11 +8,11 @@ super + F7
 
 
 #Rofi
-super + F12
+super + F3
 	rofi -combi-modi window,drun,ssh -font "mononoki Nerd Font 13" -show combi -icon-theme "Papirus" -show-icons
 
-super + F11
-	~/.local/bin/dmen.sh
+super + F2
+	~/.local/bin/dmen_run
 
 #################################################################
 # SUPER + ... KEYS
@@ -72,6 +72,12 @@ super + shift + s
 	pkill -USR1 -x sxhkd
 
 
+#emoji
+super + shift + e
+	rofi -show emoji -modi emoji
+#devicons
+super + shift + d
+	ezmojis devicons -r
 
 #################################################################
 # CONTROL + ALT KEYS
@@ -187,7 +193,7 @@ XF86AudioMute
 
 #PLAY
 XF86AudioPlay
-    mpc play
+    mpc toggle
 
 #Next
 XF86AudioNext
