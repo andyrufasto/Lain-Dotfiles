@@ -1,0 +1,16 @@
+[user]
+	email = andy@andyrufasto.cf
+	name = Andy Rufasto
+	signingkey = 
+
+[github]
+	user = andyrufasto
+	token = 
+
+[color]
+	ui = auto
+
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
