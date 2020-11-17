@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=15.1
+Type=Application
+Terminal=false
+Comment=Statistics, Data Annalysis
+Exec=wine /mnt/Data/Programs/Stata15/Stata-64.exe
+Name=Stata 15
+Icon=/home/lain/Pictures/icons/stata15.png

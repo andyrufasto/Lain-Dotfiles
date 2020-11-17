@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Dota 2
+Comment=Go o no Go?
+GenericName=Go Dotita
+Exec=steam steam://rungameid/570
+Icon=/home/lain/Pictures/icons/Dota2.png
+Terminal=false
+Type=Application
+Categories=Game;
