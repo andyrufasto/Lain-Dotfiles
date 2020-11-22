@@ -1,7 +1,7 @@
 [user]
 	email = andy@andyrufasto.cf
 	name = Andy Rufasto
-	signingkey = 
+	signingkey = andy@andyrufasto.cf
 
 [github]
 	user = andyrufasto

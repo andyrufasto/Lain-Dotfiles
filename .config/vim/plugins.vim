@@ -9,8 +9,8 @@ Plugin 'francoiscabrol/ranger.vim'                " :RangerCurrentDirectory mapp
 Plugin 'godlygeek/tabular'                        " :Tabularize /#                          
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'plasticboy/vim-markdown'
+Plugin 'vim-airline/vim-airline'
 Plugin 'ryanoasis/vim-devicons'
-Plugin 'vim-airline/vim-vim-airline'
 Plugin 'voldikss/vim-floaterm' " :FloatTermNew, :FloatTermKill
 call vundle#end()
 
