@@ -81,6 +81,7 @@ bspc rule -a Xfce4-terminal state=floating
 
 #Tiled applications
 bspc rule -a Gnome-disks state=tiled
+bspc rule -a zathura state=tiled
 bspc rule -a Xfce4-settings-manager state=tiled
 
 #open applications on specific workspaces
