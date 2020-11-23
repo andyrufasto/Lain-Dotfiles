@@ -23,13 +23,13 @@ env:
     
 font:
   normal:
-    family: mononoki Nerd Font
+    family: Anonymice Nerd Font
   bold:
-    family: mononoki Nerd Font
+    family: Anonymice Nerd Font
     style: Bold
 
   italic:
-    family: mononoki Nerd Font
+    family: Anonymice Nerd Font
     style: Italic
 
   bold_italic:
