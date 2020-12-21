@@ -2,7 +2,7 @@ neofetch
 
 abbr r "ranger"
 abbr glo "git log --oneline -10"
-abbr gc "git commit -S"
+abbr gc "git commit -S -m"
 abbr lg "lazygit"
 
 set fish_greeting
