@@ -9,7 +9,7 @@ super + F7
 
 #Rofi
 super + F3
-	rofi -combi-modi window,drun,ssh -font "mononoki Nerd Font 13" -show combi -icon-theme "Papirus" -show-icons
+	rofi -combi-modi window,drun,ssh -font "mononoki Nerd Font 16" -show combi -icon-theme "Papirus" -show-icons
 
 super + F2
 	~/.local/bin/dmen_run
@@ -38,7 +38,7 @@ super + v
 
 # explorer
 super + e
-	thunar
+	pcmanfm
 
 #alacritty
 super + Return
@@ -56,6 +56,10 @@ super + {u,i,o,p}
 # floating
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+#layout
+super + space
+	bsp-layout cycle
 #################################################################
 # SUPER + SHIFT KEYS
 #################################################################
