@@ -1,0 +1,4 @@
+source ~/.config/bash/src/alias
+source ~/.config/bash/src/basic
+source ~/.config/bash/src/functions
+source ~/.config/bash/src/prompt
