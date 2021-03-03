@@ -1,7 +1,8 @@
 command R execute "RangerCurrentDirectory"
 command Rt execute "RangerCurrentDirectoryNewTab"
-map <C-V> r !xclip -o -sel c
-vnoremap <C-c> w !xclip -sel c<Enter>
+
+map <C-p> r !xclip -o -sel c
+vnoremap <C-c> :w !xclip -sel c<CR><CR>
 
 nnoremap <C-H> <C-W><C-H>
 nnoremap <C-J> <C-W><C-J>

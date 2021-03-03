@@ -4,4 +4,5 @@ autocmd BufRead,BufNewFile *.py set filetype=python
 autocmd BufRead,BufNewFile *.r set filetype=r
 autocmd BufRead,BufNewFile *.sh set filetype=sh
 autocmd BufRead,BufNewFile *.tex set filetype=tex
+autocmd BufRead,BufNewFile /tmp/calcurse*,~/.config/notes/* set filetype=markdown
 

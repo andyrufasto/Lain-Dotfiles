@@ -1,5 +1,4 @@
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-filetype plugin on
 let mapleader =" "
 set backspace=2
 set encoding=utf-8
@@ -14,3 +13,5 @@ set spelllang=en,es       " spellcheck :set spell!, mapped to <F7>.
 set splitbelow splitright " :sp split below, :vsp split right.
 set tabstop=2
 syntax on                 " syntax highlight.
+set iskeyword=@,48-57,_,192-255,-,\ 
+
