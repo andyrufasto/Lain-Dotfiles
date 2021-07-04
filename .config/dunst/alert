@@ -1,0 +1,3 @@
+#!/bin/sh
+
+mpc | sed -n 2p | grep playing || paplay "$HOME"/.config/dunst/navi.ogg

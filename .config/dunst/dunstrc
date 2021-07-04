@@ -4,7 +4,7 @@
     geometry = "450x20-20-20"
     indicate_hidden = yes
     shrink = yes
-    transparency = 50
+    transparency = 20
     notification_height = 20
     separator_height = 2
     padding = 7
@@ -24,7 +24,7 @@
     sort = yes
 
     idle_threshold = 120
-    font = Anonymice Nerd Font 14
+    font = mononoki Nerd Font 15
     line_height = 0
     markup = full
 
@@ -40,7 +40,7 @@
     # Markup is allowed
     format = "<b>%s</b>\n%b"
 
-    alignment = right
+    alignment = center
     show_age_threshold = 60
     word_wrap = yes
     ellipsize = middle
@@ -49,9 +49,9 @@
     hide_duplicate_count = true
     show_indicators = yes
     icon_position = left
-    max_icon_size = 40
+    max_icon_size = 80
     corner_radius = 1
-    #icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/:/usr/share/icons/Adwaita/256x256/status/
+    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/:/usr/share/icons/Adwaita/256x256/legacy/
     sticky_history = yes
     history_length = 20
     dmenu = /usr/bin/dmenu -p dunst:
@@ -150,4 +150,7 @@
 #    summary = *twitter.com*
 #    urgency = normal
 #
+[play_sound]
+	summary = "*"
+	script = "/home/lain/.config/dunst/alert"
 # vim: ft=cfg
