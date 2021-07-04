@@ -1,0 +1,2 @@
+#!/bin/sh
+echo "sh /home/lain/scripts/notify-pomodoro" | at now + 25 min

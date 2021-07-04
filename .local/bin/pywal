@@ -1,0 +1,24 @@
+#!/bin/sh
+# file
+WALL=~/Pictures/wallpaper.jpg
+ln -f $1 "$WALL"
+rm ~/.cache/wal/schemes/_home_lain_Pictures_wallpaper_jpg_dark_None_None_1.1.0.json
+# pywal
+wal -i $1
+#dunst
+~/scripts/dunstwall
+# notify
+# alacritty
+~/scripts/alacritty_colors
+# fish
+fish -c source ~/.config/fish/config.fish
+#gtk theme
+~/Documents/github/oomox-gtk-theme/change_color.sh ~/.cache/wal/colors-oomox
+# vis
+sort -o ~/.config/vis/colors/wal ~/.config/vis/colors/wal
+killall -USR1 vis
+# screenkey
+pgrep screenkey && killall -USR1 screenkey && sk
+# zathura
+killall -USR1 zathura
+
