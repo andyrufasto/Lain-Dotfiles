@@ -1,3 +1,5 @@
+#!/bin/sh
+
 . "${HOME}/.cache/wal/colors.sh"
 
 pkill screenkey
