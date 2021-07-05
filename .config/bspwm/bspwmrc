@@ -6,27 +6,27 @@ $HOME/.config/bspwm/autostart.sh
 #bspc config external_rules_command ~/.config/bspwm/scripts/external_rules_command
 
 #BSPWM configuration
-bspc config border_radius       25
+bspc config border_radius        25
 bspc config border_width         2
-bspc config window_gap           10
-bspc config top_padding          30
 bspc config bottom_padding       10
 bspc config left_padding         10
 bspc config right_padding        10
-bspc config single_monocle       false
-#bspc config click_to_focus       true
 bspc config split_ratio          0.50
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+bspc config top_padding          30
+bspc config window_gap           10
+#bspc config click_to_focus       true
 #bspc config focus_by_distance    true
-bspc config focus_follows_pointer true
 #bspc config history_aware_focus  true
-bspc config pointer_modifier mod4
+bspc config borderless_monocle    true
+bspc config focus_follows_pointer true
+bspc config gapless_monocle       true
+bspc config single_monocle        false
 bspc config pointer_action1 move
 bspc config pointer_action2 resize_side
 bspc config pointer_action3 resize_corner
-bspc config remove_disabled_monitors true
+bspc config pointer_modifier mod4
 bspc config merge_overlapping_monitors true
+bspc config remove_disabled_monitors   true
 
 #BSPWM coloring
 
@@ -34,9 +34,9 @@ bspc config merge_overlapping_monitors true
 . "${HOME}/.cache/wal/colors.sh"
 
 # Set the border colors.
-bspc config normal_border_color "$color0"
-bspc config active_border_color "$color15"
+bspc config active_border_color  "$color15"
 bspc config focused_border_color "$color15"
+bspc config normal_border_color  "$color0"
 
 #Single monitor
 bspc monitor HDMI1 -d 1 2 3 4 5
@@ -53,12 +53,11 @@ bspc monitor DP1 -d 6 7 8 9
 #bspc monitor HDMI2 -d 6 7 8 9 10
 
 #Fullscreen applications
-bspc rule -a inkscape state=fullscreen
 bspc rule -a Spotify state=fullscreen
-bspc rule -a Vlc state=fullscreen
-bspc rule -a VirtualBox Manager state=fullscreen
 bspc rule -a VirtualBox Machine state=fullscreen
-#bspc rule -a Gimp state=fullscreen
+bspc rule -a VirtualBox Manager state=fullscreen
+bspc rule -a Vlc state=fullscreen
+bspc rule -a inkscape state=fullscreen
 
 #Floating applications
 bspc rule -a Arandr state=floating
