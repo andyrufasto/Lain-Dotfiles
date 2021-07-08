@@ -3,15 +3,15 @@ snippet gist "Inserta un codigo de gist" br
 {% gist $1 %}
 endsnippet
 
-snippet ig "Inserta imagen" br
+snippet ig "  Inserta imagen" br
 ![$1](/assets/images/post/$2)
 endsnippet
 
-snippet il "Link" br
+snippet il "  Link" br
 [$1]($2)
 endsnippet
 
-snippet bf "Negrita" 
+snippet bf "  Negrita" 
 **$1**
 endsnippet
 
@@ -28,9 +28,12 @@ tags:
 ---
 endsnippet
 
-snippet code "blockcode" b
-\`\`\`$1
-$2
+snippet code "  blockcode" b
 \`\`\`
+$1
+\`\`\`
+endsnippet
 
+snippet repo "  Repo Card" b
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=${1:user}&repo=${2:repo}&show_owner=true)](https://github.com/${1:user}/${2:repo})
 endsnippet
