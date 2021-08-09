@@ -1,0 +1,42 @@
+snippet header " Header html" b
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>TITLE</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+	</body>
+</html>
+endsnippet
+
+snippet tag "<></>" b
+<${1:tag}>${2:content}</${1}>
+endsnippet
+
+snippet ig " Include Image" b
+<img src="${1:imagen.jpg}" alt="${2:imagen}" width="300">
+endsnippet
+
+snippet il " Include Link" b
+<a href="https://${1:google.com}">${2:Click Here}</a>
+endsnippet
+
+snippet form "Form" b
+<form>
+	<input type="text" placeholder="${1:Full Name}" name="${2:name}"> 
+	<input type="Submit">
+</form>
+endsnippet
+
+snippet buttom "buttom" b
+<button data-page="${1:data}">${2:text}</button>
+endsnippet
+
+snippet viewport "Responsive Design" b
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+endsnippet
+
+snippet bootstrap "Bootstrap CSS" b
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+endsnippet

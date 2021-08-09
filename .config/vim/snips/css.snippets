@@ -1,0 +1,61 @@
+snippet div "Div" b
+div {
+	background-color: blue;
+	width: 500px;
+	height: 400px;
+	padding: 20px;
+	margin: 10px;
+}
+endsnippet
+
+snippet Font "Font" b
+div {
+	border: 1px solid black;
+	font-family: Arial, sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+}
+endsnippet
+
+snippet table "table" b
+table {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+td, th {
+	border: 1x solid black;
+	padding: 5px;
+}
+endsnippet
+
+snippet id "css to an specific id" b
+#${1:foo} {
+	color: blue;
+}
+endsnippet
+
+snippet class "class" b
+.${1:baz} {
+	color: red;
+}
+endsnippet
+
+snippet children "Description" b
+${1:children} ${2:parent} {
+
+}
+endsnippet
+
+snippet atribute "Description" b
+${1:tag}[${2:atribute}] {
+
+}
+endsnippet
+
+snippet flex "flexbox" b
+#${1:id} {
+	display: flex;
+	flex-wrap: wrap;
+}
+endsnippet
