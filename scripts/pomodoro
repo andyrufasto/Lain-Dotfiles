@@ -1,0 +1,39 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Short-Description : Time management script.
+# Requires          : alacritty, bspwm, xdotool
+### END INIT INFO
+
+# Author: Andy Rufasto <andy@andyrufasto.cf>
+
+
+function main() {
+	clock
+	windowresize
+	timer_notify
+}
+
+#==== Functions ===
+
+function clock() {
+ alacritty -t "pomodoro-clock" -e bash -c 'MIN=25;for ((i=MIN*60;i>=0;i--));do echo -ne "\r$(date -d"0+$i sec " +%M:%S) ";sleep 1;done | lolcat -s 64' &
+}
+
+function windowresize() {
+	sleep 0.2
+	xdotool search --name "pomodoro-clock" windowactivate
+	bspc node -t floating
+	bspc node -g sticky
+	xdotool getactivewindow key ctrl+0x3d ctrl+0x3d ctrl+0x3d ctrl+0x3d ctrl+0x3d
+	sleep 0.2
+	xdotool search --name "pomodoro-clock" windowsize 155 84 windowmove 1743 42
+
+}
+
+
+function timer_notify() {
+	echo 'bash -c "notify-send -u critical -i ~/Pictures/wallpaper.jpg "" "Tiempo!""' | at now + 25 min
+}
+#=======
+main
