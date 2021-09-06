@@ -1,0 +1,45 @@
+snippet try_error "Try do something if does not have an error" b
+def ${1:function}():
+	try:
+		${2:code}
+		if :
+			${3:code is ok}
+			pass
+		else:
+			raise ${4:Error}(f'Error: ')
+	except: ${4} as e:
+		print(e)
+
+endsnippet
+
+snippet run "run program" b
+def run():
+	${1:function}()
+
+if __name__ == '__main__':
+	run()
+
+endsnippet
+
+snippet scrapy "scrapy" b
+import scrapy
+
+class ${1:QuotesSpider}(scrapy.Spider):
+	name = '${2:name}'
+	start_urls = [
+		'${3:url}'
+	]
+
+custom_settings = {
+	'FEED_URI': '${2}.json',
+	'FEED_FORMAT': 'json',
+	'FEED_EXPORT_ENCODING': 'utf-8'
+}
+
+def parse(self, response):
+	data = response.xpath()
+	for item in data:
+		yield response.folow(data, callback=self.parse_data)
+def parse_data(self, response):
+	pass
+endsnippet

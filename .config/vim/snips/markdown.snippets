@@ -1,18 +1,28 @@
+snippet bf " Negrita" 
+**$1**
+endsnippet
 
-snippet gist "Inserta un codigo de gist" br
+snippet code "  bockcode" b
+\`\`\`$1
+$2
+\`\`\`
+endsnippet
+
+snippet fn "footnote" 
+[^${1:1}] 
+[^${1:1}] :
+endsnippet
+
+snippet gist "Inserta un codigo de gist" b
 {% gist $1 %}
 endsnippet
 
-snippet ig "  Inserta imagen" br
+snippet if "Italic" 
+_$1_
+endsnippet
+
+snippet ig " Inserta imagen" br
 ![$1](/assets/images/post/$2)
-endsnippet
-
-snippet il "  Link" br
-[$1]($2)
-endsnippet
-
-snippet bf "  Negrita" 
-**$1**
 endsnippet
 
 snippet meta "Meta" b
@@ -28,12 +38,19 @@ tags:
 ---
 endsnippet
 
-snippet code "  blockcode" b
-\`\`\`
-$1
-\`\`\`
+snippet il "Link" br
+[$1]($2)
 endsnippet
 
-snippet repo "  Repo Card" b
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=${1:user}&repo=${2:repo}&show_owner=true)](https://github.com/${1:user}/${2:repo})
+snippet checklist "ﱔ checklist" b
+[ ] $1
+endsnippet
+
+##### MATH
+snippet \beta "β" i
+β
+endsnippet
+
+snippet \sum "∑" b
+∑
 endsnippet

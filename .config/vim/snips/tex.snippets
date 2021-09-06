@@ -1,11 +1,3 @@
-snippet frac "fraction" b
-\frac{$1:num}{$2:den}
-endsnippet
-
-snippet input "UTF-8" b
-\usepackage[utf8]{inputenc}
-endsnippet
-
 snippet bf  "Negrita"
 \textbf{$1}
 endsnippet
@@ -15,6 +7,18 @@ snippet enum "Enumerate"
 	\item $1
 	\item $2
 \end{enumerate}
+endsnippet
+
+snippet frame "beamer frame" b
+\begin{frame}[fragile] \frametitle{$1}
+	$2
+\end{frame}
+
+endsnippet
+
+snippet input "utf-8 caracteres" b
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
 endsnippet
 
 snippet eq "Ecuación"
@@ -69,6 +73,16 @@ snippet minipage "2 columnas" b
 \end{minipage}
 endsnippet
 
+snippet definecolor "define a color" b
+\definecolor{${1:usm}}{RGB}{${2:176,153,40}}
+endsnippet
+
+snippet 2ch1p "2 chapters in one page" b
+\makeatletter
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{}{}{}
+\makeatother
+endsnippet
+
 snippet multiline "math multiline" b
 \begin{multiline*}
 	$1
@@ -87,10 +101,3 @@ snippet table "Table" b
 \end{table}
 
 endsnippet
-
-snippet \[ "Math" b
-\[
-$1
-\]
-endsnippet
-

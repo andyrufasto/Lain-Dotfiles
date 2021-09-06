@@ -1,0 +1,11 @@
+snippet query "SQL query" b
+SELECT      ${1:variable},
+            AVG(budget) AS avg_budget,
+            AVG(gross) AS avg_gross
+FROM        ${2:table}
+WHERE       ${3:variable} > 1990
+GROUP       BY ${1:variable}
+HAVING      AVG(budget)>600000
+ORDER       BY avg_gross DEC;
+
+endsnippet

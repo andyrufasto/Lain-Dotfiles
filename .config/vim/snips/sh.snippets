@@ -1,4 +1,3 @@
-
 snippet #sh "Shebang" b
 #!/bin/sh
 endsnippet
@@ -43,4 +42,17 @@ endsnippet
 snippet IFS "Internal Field Separator" b
 IFS=${1:,}
 set -- \`${2:command}\`
+endsnippet
+
+snippet null "dev/null"
+nohup $1  /dev/null 2>&1 &
+
+endsnippet
+
+snippet line "full width line characters" b
+function line(){
+	w="$(tput cols)"
+	char="-"
+	printf "%${w}s\n" | sed "s/ /$char/g"
+}
 endsnippet

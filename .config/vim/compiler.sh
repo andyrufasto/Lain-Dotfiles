@@ -5,10 +5,9 @@ base="${file%.*}"
 
 case "$file" in
 	*\.tex)
-		pdflatex "$file" && rm "$base".log "$base".aux;;
+		pdflatex "$file" && disown;;
 	*\.md)
 		pandoc "$file" -o "$base".pdf ;;
-        
 	*\.wiki)
 		pandoc "$file" -o "$base".pdf ;;
 	*\.r)
@@ -22,3 +21,4 @@ case "$file" in
 	*\.sh)
 		bash "$file" ;;
 esac
+

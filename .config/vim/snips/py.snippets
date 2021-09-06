@@ -1,0 +1,13 @@
+snippet try_error "Try do something if does not have an error" b
+def ${1:function}():
+	try:
+		${2:code}
+		if
+			${3:code is ok}
+			pass
+		else:
+			raise ${2:Error}(f'Error: ')
+	except: ${2} as e:
+		print(e)
+
+endsnippet
