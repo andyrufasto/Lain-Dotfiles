@@ -330,6 +330,8 @@ super + ctrl + {u,i,o,p}
 super + ctrl + {_,shift +}{1-9}
 	bspc node {_,@/} --presel-ratio 0.{1-9}
 
+super + alt + t
+	bspc node -g sticky
 
 #################################################################
 # ALT KEYS
