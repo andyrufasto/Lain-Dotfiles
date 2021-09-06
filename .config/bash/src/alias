@@ -3,6 +3,7 @@
 #=====================================================================
 
 alias g="git"
+alias cat="bat --theme=base16"
 alias glo="git log --oneline -10"
 alias gc="git commit -S -m"
 alias emoji="ezmoji emojis -r"
