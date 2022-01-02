@@ -1,12 +1,14 @@
 # Lain dotfiles
 
-Comfy linux configs: aesthetic, minimalist and 
+Comfy linux configs: aesthetic, minimalist and elegant.
 
 ![dotfiles](/img/dotfiles.gif)
 
 ## Pywal on everything !!!
+
 - alacritty (terminal)
 - bspwm (window manager)
+- discord (betterdiscord required) 
 - dmenu (launcher)
 - dunst
 - i3 (window manager)
@@ -70,7 +72,7 @@ features:
 
 
 ### ranger (file manager)
-- devicons, image previews with ueberzug
+- devicons, image  and video previews with ueberzug
 
 ### newsboat (RSS reader)
 - vim-like keys

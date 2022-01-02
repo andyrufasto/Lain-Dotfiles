@@ -22,3 +22,6 @@ pgrep screenkey && killall -USR1 screenkey && sk
 # zathura
 killall -USR1 zathura
 
+#discord
+pywal-discord
+

@@ -1,10 +1,15 @@
 wal -i $1
+
 #alacritty
 ~/scripts/alacritty_colors
+
 #dunst
 ~/scripts/dunstwall
+
 #vis
+sort -o ~/.config/vis/colors/wal ~/.config/vis/colors/wal
 killall -USR1 vis
+
 #notify-send
 nombre=$(echo $1 | cut -d_ -f2)
 
