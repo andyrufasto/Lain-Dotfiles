@@ -297,8 +297,8 @@
 #def_key "ctrl-v"
 #  select_range
 #
-#def_key "v"
-#  reverse_selection
+def_key "b"
+  reverse_selection
 #
 #def_key "V"
 #  remove_selection

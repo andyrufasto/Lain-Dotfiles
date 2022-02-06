@@ -4,13 +4,14 @@
 # Configuración de Alacritty
 #===================================================================
 
-background_opacity: 0.7
+window.opacity: 0.88
 key_bindings:
   - { key: Key0,     mods: Control,       action: ResetFontSize    }
   - { key: Equals,   mods: Control,       action: IncreaseFontSize }
-  - { key: Add,      mods: Control,       action: IncreaseFontSize }
-  - { key: Subtract, mods: Control,       action: DecreaseFontSize }
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+
+# Ctrl + Shift + Space Normal mode
+# Ctrl + Shift + V paste
 
 
 env:
@@ -23,13 +24,13 @@ env:
     
 font:
   normal:
-    family: Anonymice Nerd Font
+    family: Anonymice Nerd Font Mono
   bold:
-    family: Anonymice Nerd Font
+    family: Anonymice Nerd Font Mono
     style: Bold
 
   italic:
-    family: Anonymice Nerd Font
+    family: mononoki Nerd Font 
     style: Italic
 
   bold_italic:
@@ -40,33 +41,38 @@ font:
 # BEGIN ACE
 colors:
   primary:
-    background: '0x100809'
-    foreground: '0xd4b0bc'
+    background: '0x0c0503'
+    foreground: '0xe9dfcb'
   cursor:
-    text:       '0x100809'
-    cursor:     '0xd4b0bc'
+    text:       '0x0c0503'
+    cursor:     '0xe9dfcb'
   normal:
-    black:      '0x100809'
-    red:        '0x75474E'
-    green:      '0x902E2F'
-    yellow:     '0xB83838'
-    blue:       '0x984C58'
-    magenta:    '0x9B5762'
-    cyan:       '0xA98678'
-    white:      '0xd4b0bc'
+    black:      '0x0c0503'
+    red:        '0xA26639'
+    green:      '0xAB9164'
+    yellow:     '0xDA9F49'
+    blue:       '0xD6A564'
+    magenta:    '0x798981'
+    cyan:       '0xC7B391'
+    white:      '0xe9dfcb'
   bright:
-    black:      '0x947b83'
-    red:        '0x75474E'
-    green:      '0x902E2F'
-    yellow:     '0xB83838'
-    blue:       '0x984C58'
-    magenta:    '0x9B5762'
-    cyan:       '0xA98678'
-    white:      '0xd4b0bc'
+    black:      '0xa39c8e'
+    red:        '0xA26639'
+    green:      '0xAB9164'
+    yellow:     '0xDA9F49'
+    blue:       '0xD6A564'
+    magenta:    '0x798981'
+    cyan:       '0xC7B391'
+    white:      '0xe9dfcb'
 
 # END ACE
+
 window:
+  dimensions:
+    columns: 82
+    lines: 23
+
   padding:
-    x: 10
-    y: 10
+    x: 25
+    y: 25
 
